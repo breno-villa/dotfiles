@@ -20,7 +20,7 @@
     nixosConfigurations = {
       "nixos" = let
         hostname = "nixos";
-        username = "demeter";
+        username = "breno";
       in
         nixpkgs.lib.nixosSystem rec {
           system = "x86_64-linux";
@@ -64,7 +64,7 @@
     # macos
     darwinConfigurations = {
       "macos" = let
-        username = "demeter";
+        username = "breno";
       in
         nix-darwin.lib.darwinSystem {
           modules = [
